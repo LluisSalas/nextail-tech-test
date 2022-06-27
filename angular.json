@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "nextail-products-report": "apps/nextail-products-report",
+    "nextail-products-report-e2e": "apps/nextail-products-report-e2e"
+  }
+}
