@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { NextailProductsApi } from '@nextail-tech-test/nextail-api';
 
 @Component({
   selector: 'nextail-tech-test-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
-  title = 'nextail-products-report';
+export class AppComponent implements OnInit {
+  constructor(private productsApi: NextailProductsApi) {}
+
+  ngOnInit(): void {
+    this.productsApi.getProducts().subscribe((value) => console.log(value));
+  }
 }
