@@ -1,20 +1,20 @@
 {
   "projectType": "library",
-  "sourceRoot": "libs/nextail-api/src",
+  "sourceRoot": "libs/nextail-store/src",
   "prefix": "nextail-tech-test",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/nextail-api"],
+      "outputs": ["coverage/libs/nextail-store"],
       "options": {
-        "jestConfig": "libs/nextail-api/jest.config.ts",
+        "jestConfig": "libs/nextail-store/jest.config.ts",
         "passWithNoTests": true
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": ["libs/nextail-api/**/*.ts", "libs/nextail-api/**/*.html"]
+        "lintFilePatterns": ["libs/nextail-store/**/*.ts", "libs/nextail-store/**/*.html"]
       }
     }
   },

@@ -4,6 +4,7 @@
   "projects": {
     "nextail-api": "libs/nextail-api",
     "nextail-products-report": "apps/nextail-products-report",
-    "nextail-products-report-e2e": "apps/nextail-products-report-e2e"
+    "nextail-products-report-e2e": "apps/nextail-products-report-e2e",
+    "nextail-store": "libs/nextail-store"
   }
 }

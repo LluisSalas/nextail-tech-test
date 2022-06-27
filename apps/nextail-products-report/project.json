@@ -13,10 +13,7 @@
         "polyfills": "apps/nextail-products-report/src/polyfills.ts",
         "tsConfig": "apps/nextail-products-report/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": [
-          "apps/nextail-products-report/src/favicon.ico",
-          "apps/nextail-products-report/src/assets"
-        ],
+        "assets": ["apps/nextail-products-report/src/favicon.ico", "apps/nextail-products-report/src/assets"],
         "styles": ["apps/nextail-products-report/src/styles.scss"],
         "scripts": []
       },
@@ -74,10 +71,7 @@
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": [
-          "apps/nextail-products-report/**/*.ts",
-          "apps/nextail-products-report/**/*.html"
-        ]
+        "lintFilePatterns": ["apps/nextail-products-report/**/*.ts", "apps/nextail-products-report/**/*.html"]
       }
     },
     "test": {

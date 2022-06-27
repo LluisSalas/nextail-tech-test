@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nextail-tech-test/nextail-api": ["libs/nextail-api/src/index.ts"]
+      "@nextail-tech-test/nextail-api": ["libs/nextail-api/src/index.ts"],
+      "@nextail-tech-test/nextail-store": ["libs/nextail-store/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

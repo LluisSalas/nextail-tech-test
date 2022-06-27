@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { NextailProductsApi } from '@nextail-tech-test/nextail-api';
+import { ProductsFacade } from '@nextail-tech-test/nextail-store';
 
 @Component({
   selector: 'nextail-tech-test-root',
   templateUrl: './app.component.html',
 })
 export class AppComponent implements OnInit {
-  constructor(private productsApi: NextailProductsApi) {}
+  constructor(private productsFacade: ProductsFacade) {}
 
   ngOnInit(): void {
-    this.productsApi.getProducts().subscribe((value) => console.log(value));
+    this.productsFacade.getProducts();
+    this.productsFacade.products$.subscribe((value) => console.log(value));
   }
 }
