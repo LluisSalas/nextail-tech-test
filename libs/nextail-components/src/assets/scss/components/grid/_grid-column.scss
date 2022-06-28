@@ -1,0 +1,32 @@
+/**
+* Column
+*/
+.nextail-col-auto {
+  flex-shrink: 1;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+[class*='nextail-col'] {
+  padding: calc($nextail-grid-gutter / 2);
+}
+
+[class*='nextail-col'].no-gutter {
+  padding: 0;
+}
+
+@include xs($nextail-grid-breakpoint-xs-max-width) {
+  @include gridGenerator('xs', $nextail-grid-columns-number, true);
+}
+
+@include sm($nextail-grid-breakpoint-sm-min-width) {
+  @include gridGenerator('sm', $nextail-grid-columns-number, true);
+}
+
+@include md($nextail-grid-breakpoint-md-min-width) {
+  @include gridGenerator('md', $nextail-grid-columns-number, true);
+}
+
+@include lg($nextail-grid-breakpoint-lg-min-width) {
+  @include gridGenerator('lg', $nextail-grid-columns-number, true);
+}
