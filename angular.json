@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "nextail-api": "libs/nextail-api",
+    "nextail-components": "libs/nextail-components",
     "nextail-products-report": "apps/nextail-products-report",
     "nextail-products-report-e2e": "apps/nextail-products-report-e2e",
     "nextail-store": "libs/nextail-store"

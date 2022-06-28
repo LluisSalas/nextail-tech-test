@@ -1,0 +1,22 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/nextail-components/src",
+  "prefix": "nextail-tech-test",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/nextail-components"],
+      "options": {
+        "jestConfig": "libs/nextail-components/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/nextail-components/**/*.ts", "libs/nextail-components/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}
