@@ -1,0 +1,15 @@
+.nextail-product-report-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: $nextail-product-report-card-box-shadow;
+  font-family: $nextail-product-report-card-font-family;
+
+  &__figure {
+    width: $nextail-product-report-card-figure-width;
+  }
+
+  &__description {
+    padding: $nextail-product-report-card-description-padding;
+    flex-grow: 1;
+  }
+}
