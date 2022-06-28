@@ -1,0 +1,18 @@
+.nextail-products-report-shell--private {
+  grid-template-areas:
+    'header'
+    'content';
+  grid-template-rows: 1fr 90%;
+  grid-template-columns: 1fr;
+
+  &__header {
+    grid-area: header;
+    background-color: $nextail-private-shell-header-background-color;
+  }
+
+  &__content {
+    grid-area: content;
+    background-color: $nextail-private-shell-content-background-color;
+    overflow: auto;
+  }
+}

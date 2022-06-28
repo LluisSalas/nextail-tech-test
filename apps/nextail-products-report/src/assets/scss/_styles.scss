@@ -12,8 +12,11 @@
 // OBJECTS-----------------------------
 
 // COMPONENTS--------------------------
-/*  Nextail Components components */
+/*  Nextail Components */
 @import 'components/nextail-components/nextail-components';
+/* Shell */
+@import 'components/shell/variables';
+@import 'components/shell/shell';
 
 // LAYOUTS----------------------------
 
