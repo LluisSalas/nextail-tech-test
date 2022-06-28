@@ -10,7 +10,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "nextailTechTest",
+            "prefix": "nextail",
             "style": "camelCase"
           }
         ],
@@ -18,10 +18,11 @@
           "error",
           {
             "type": "element",
-            "prefix": "nextail-tech-test",
+            "prefix": "nextail",
             "style": "kebab-case"
           }
-        ]
+        ],
+        "@angular-eslint/no-host-metadata-property": ["off"]
       }
     },
     {
