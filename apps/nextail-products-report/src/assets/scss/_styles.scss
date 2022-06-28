@@ -22,6 +22,9 @@
 @import 'components/header/header';
 
 // LAYOUTS----------------------------
+/* Private main */
+@import 'layouts/private-main/variables';
+@import 'layouts/private-main/private-main';
 
 // TO DO: componetize more to avoid styles and classes directly in views
 // VIEWS----------------------------

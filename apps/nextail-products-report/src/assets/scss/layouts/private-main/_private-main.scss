@@ -1,0 +1,11 @@
+.nextail-products-review-private-main-layout {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: $nextail-private-main-padding;
+  overflow: auto;
+}
+
+.nextail-products-review-private-main-layout__content {
+  font-family: $nextail-private-main-content-font-family;
+}
