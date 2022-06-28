@@ -1,0 +1,23 @@
+/**************************************
+            ITCSS ARCHITECTURE
+***************************************/
+// SETTINGS-----------------------------
+/*  Global variables */
+@import 'settings/global/colors';
+@import 'settings/global/spacing';
+@import 'settings/global/typography';
+
+/* Default theme */
+@import 'settings/themes/default/styleguide';
+
+// TOOLS-----------------------------
+@import 'tools/mixins';
+
+// GENERIC-----------------------------
+@import 'generic/reset';
+
+// OBJECTS-----------------------------
+@import 'objects/component/component';
+
+// UTILITIES-----------------------------
+@import 'utilities/utilities';

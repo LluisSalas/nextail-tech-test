@@ -1,0 +1,16 @@
+@mixin gridGenerator($breakpoint, $columns-number, $offset: false) {
+  // COLUMNS
+  @for $column from 1 to $columns-number + 1 {
+    .nextail-col-#{$breakpoint}-#{$column} {
+      width: calc(calc(100% * $column) / $columns-number);
+    }
+  }
+  // OFFSET COLUMNS
+  @if $offset {
+    @for $column from 1 to $columns-number + 1 {
+      .nextail-col-#{$breakpoint}-offset-#{$column} {
+        margin-left: calc(calc((100% * $column)) / $columns-number);
+      }
+    }
+  }
+}
