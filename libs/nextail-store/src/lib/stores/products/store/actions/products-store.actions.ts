@@ -2,11 +2,14 @@
 import { createAction, props } from '@ngrx/store';
 
 // API
-import { NextailProduct } from '@nextail-tech-test/nextail-api';
+import { NextailProductExtended } from '@nextail-tech-test/nextail-api';
 
-// Get people
+// Get products
 export const getProducts = createAction('[Products] Get Products');
 export const getProductsSuccess = createAction(
   '[Products] Get Products Success',
-  props<{ products: NextailProduct[] }>(),
+  props<{ products: NextailProductExtended[] }>(),
 );
+
+// Delte product
+export const deleteProduct = createAction('[Products] Delete Product', props<{ code: number }>());

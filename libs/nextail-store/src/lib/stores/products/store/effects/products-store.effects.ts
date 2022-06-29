@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { NextailProduct, NextailProductsApi } from '@nextail-tech-test/nextail-api';
+import { NextailProductExtended, NextailProductsApi } from '@nextail-tech-test/nextail-api';
 import { exhaustMap, map } from 'rxjs';
 import { ProductsActions } from '../actions/action-types';
 
@@ -14,8 +14,8 @@ export class ProductsEffects {
       ofType(ProductsActions.getProducts),
       exhaustMap(() =>
         this.productsApi
-          .getProducts()
-          .pipe(map((products: NextailProduct[]) => ProductsActions.getProductsSuccess({ products }))),
+          .getProductsExtended()
+          .pipe(map((products: NextailProductExtended[]) => ProductsActions.getProductsSuccess({ products }))),
       ),
     ),
   );

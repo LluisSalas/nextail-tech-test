@@ -2,14 +2,17 @@
   <nextail-container *ngIf="products">
     <nextail-row>
       <div
-        *ngFor="let item of products"
+        *ngFor="let item of products; trackBy: trackProductsByCode"
         [nextailCol]
         [nextailColXs]="12"
         [nextailColSm]="6"
         [nextailColMd]="3"
         [nextailColLg]="3"
       >
-        <nextail-product-report-card [product]="item"></nextail-product-report-card>
+        <nextail-product-report-card
+          [product]="item"
+          (completeProduct)="onCompleteProduct($event)"
+        ></nextail-product-report-card>
       </div>
     </nextail-row>
   </nextail-container>

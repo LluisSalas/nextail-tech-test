@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
-import { NextailProduct } from '@nextail-tech-test/nextail-api';
+import { NextailProductExtended } from '@nextail-tech-test/nextail-api';
 import { ProductsFacade } from '@nextail-tech-test/nextail-store';
 
 @Component({
@@ -9,7 +9,7 @@ import { ProductsFacade } from '@nextail-tech-test/nextail-store';
   host: { class: 'nextail-products-report-list-view' },
 })
 export class NextailProductsReportListView implements OnInit, OnDestroy {
-  products: NextailProduct[] | null | undefined;
+  products: NextailProductExtended[] | null | undefined;
 
   private destroyed$: Subject<boolean> = new Subject();
 
@@ -24,6 +24,14 @@ export class NextailProductsReportListView implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.destroyed$.next(true);
     this.destroyed$.complete();
+  }
+
+  onCompleteProduct(code: number): void {
+    this.productsFacade.deleteProduct(code);
+  }
+
+  trackProductsByCode(index: number, item: NextailProductExtended) {
+    return item.code;
   }
 
   private buildGetProductsSubscription(): void {

@@ -1,4 +1,6 @@
 <div class="nextail-product-report-card__figure">figure</div>
 <div class="nextail-product-report-card__description">
-  {{ product?.code }}
+  {{ product?.code }} <br />
+  <button (click)="onCompleteProduct()">mark as complete</button> <br />
+  {{ product?.sales_ranking }}
 </div>

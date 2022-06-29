@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, Output, EventEmitter } from '@angular/core';
 import { NextailProduct } from '@nextail-tech-test/nextail-api';
 
 @Component({
@@ -9,4 +9,10 @@ import { NextailProduct } from '@nextail-tech-test/nextail-api';
 })
 export class NextailProductReportCardComponent {
   @Input() product: NextailProduct | undefined;
+
+  @Output() completeProduct = new EventEmitter<number>();
+
+  onCompleteProduct(): void {
+    this.completeProduct.emit(this.product?.code);
+  }
 }
