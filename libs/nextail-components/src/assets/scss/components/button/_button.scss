@@ -1,0 +1,28 @@
+.nextail-button__content {
+  display: flex;
+  justify-content: $nextail-button-justify-content;
+  min-height: $nextail-button-min-height;
+  min-width: $nextail-button-min-width;
+  padding: $nextail-button-padding;
+  font-size: $nextail-button-font-size;
+  border: $nextail-button-border;
+  border-radius: $nextail-button-radius;
+  cursor: pointer;
+}
+
+.nextail-button--primary {
+  color: $nextail-button-primary-color;
+  background-color: $nextail-button-primary-bg;
+  border: $nextail-button-primary-border;
+}
+
+.nextail-button--secondary {
+  color: $nextail-button-secondary-color;
+  background-color: $nextail-button-secondary-bg;
+  border: $nextail-button-secondary-border;
+}
+
+.nextail-button--disabled {
+  opacity: $nextail-button--disabled-opacity;
+  cursor: not-allowed;
+}

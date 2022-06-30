@@ -1,0 +1,21 @@
+// Button
+$nextail-button-font-size: $nextail-font-size-medium !default;
+$nextail-button-min-width: 8.125rem !default;
+$nextail-button-min-height: 2.5rem !default;
+$nextail-button-padding: 0.625rem 1.5rem !default;
+$nextail-button-radius: $nextail-radius-secondary !default;
+$nextail-button-border: 1px solid $nextail-color-black !default;
+$nextail-button-justify-content: center !default;
+
+// Disabled
+$nextail-button--disabled-opacity: 0.8 !default;
+
+// Primary
+$nextail-button-primary-bg: $nextail-color-primary !default;
+$nextail-button-primary-color: $nextail-color-white !default;
+$nextail-button-primary-border: 1px solid $nextail-color-white !default;
+
+// Secondary
+$nextail-button-secondary-bg: rgb(2 2 2 / 35%) !default;
+$nextail-button-secondary-color: $nextail-color-white !default;
+$nextail-button-secondary-border: 1px solid $nextail-color-white !default;
