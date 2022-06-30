@@ -28,7 +28,7 @@ export class NextailProductsApi {
 
   private formatProductExtended(product: NextailProduct): NextailProductExtended {
     const productExtended: NextailProductExtended = Object.assign({}, product as NextailProductExtended);
-    productExtended.warehouseCoverageDescription = productExtended.wh_coverage > 0.5 ? 'Good' : 'Very low';
+    productExtended.stockout_rateFormatted = Number.isNaN(product.stockout_rate) ? null : product.stockout_rate * 100;
     return productExtended;
   }
 }

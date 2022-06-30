@@ -48,6 +48,22 @@
     margin: $nextail-product-report-card-name-margin;
     font-weight: bold;
   }
+
+  &__stockout-progress {
+    margin: $nextail-product-report-card-stockout-progress-margin;
+
+    &-detail {
+      font-size: $nextail-product-report-card-stockout-progress-detail-font-size;
+      margin-bottom: $nextail-product-report-card-stockout-progress-detail-margin-bottom;
+    }
+
+    &-label {
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $nextail-product-report-card-stockout-progress-label-color;
+      font-size: $nextail-product-report-card-stockout-progress-label-font-size;
+    }
+  }
 }
 
 .nextail-product-report-card-wh-coverage {

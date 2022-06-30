@@ -1,0 +1,14 @@
+.nextail-progress-bar {
+  display: flex;
+  width: 100%;
+  height: $nextail-progress-bar-height;
+  border-radius: $nextail-progress-bar-border-radius;
+  background-color: $nextail-progress-bar-bg;
+
+  &__progress {
+    height: 100%;
+    border-radius: $nextail-progress-bar-progress-border-radius;
+    background-color: $nextail-progress-bar-progress-bg;
+    transition: width 1s;
+  }
+}

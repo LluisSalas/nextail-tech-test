@@ -8,6 +8,13 @@
     <p class="nextail-product-report-card__name">{{ product?.name }}</p>
     <p class="nextail-product-report-card__price">{{ product?.price + '€' }}</p>
   </div>
+  <div class="nextail-product-report-card__stockout-progress">
+    <div class="nextail-product-report-card__stockout-progress-detail">
+      {{ product?.stockout_rateFormatted + '%'
+      }}<span class="nextail-product-report-card__stockout-progress-label"> Stockout</span>
+    </div>
+    <nextail-progress-bar [progress]="product?.stockout_rateFormatted"></nextail-progress-bar>
+  </div>
   <nextail-product-report-card-wh-coverage
     [whCoverage]="product?.wh_coverage"
   ></nextail-product-report-card-wh-coverage>
