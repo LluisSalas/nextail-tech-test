@@ -7,7 +7,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
   host: { class: 'nextail-component nextail-progress-bar' },
 })
 export class NextailProgressBarComponent {
-  private _progress: number = 0;
+  private _progress = 0;
 
   @Input() set progress(value: number | null | undefined) {
     this._progress = this.validateProgressValue(value);
