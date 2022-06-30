@@ -3,13 +3,71 @@
   flex-direction: column;
   box-shadow: $nextail-product-report-card-box-shadow;
   font-family: $nextail-product-report-card-font-family;
+  font-size: $nextail-product-report-card-font-size;
+  color: $nextail-product-report-card-font-color;
 
   &__figure {
-    width: $nextail-product-report-card-figure-width;
+    position: relative;
+    max-height: $nextail-product-report-card-figure-max-height;
+    overflow: hidden;
+  }
+
+  &__image {
+    width: $nextail-product-report-card-image-width;
+  }
+
+  &__sales-ranking {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: $nextail-product-report-card-sales-padding;
+    background-color: $nextail-product-report-card-sales-ranking-bg;
+    color: $nextail-product-report-card-sales-font-color;
+    font-size: $nextail-product-report-card-sales-font-size;
+    text-align: center;
   }
 
   &__description {
     padding: $nextail-product-report-card-description-padding;
     flex-grow: 1;
+  }
+
+  &__description-detail {
+    display: block;
+    margin-bottom: $nextail-product-report-card-description-detail-margin-bottom;
+  }
+
+  &__code {
+    font-size: $nextail-product-report-card-code-font-size;
+    margin: $nextail-product-report-card-code-margin;
+  }
+
+  &__name {
+    font-size: $nextail-product-report-card-name-font-size;
+    color: $nextail-product-report-card-name-font-color;
+    margin: $nextail-product-report-card-name-margin;
+    font-weight: bold;
+  }
+}
+
+.nextail-product-report-card-wh-coverage {
+  display: block;
+  width: 100%;
+  text-align: right;
+  font-size: $nextail-product-report-card-wh-coverage-font-size;
+
+  &--good {
+    color: $nextail-product-report-card-wh-coverage-good-color;
+  }
+
+  &--very-low {
+    color: $nextail-product-report-card-wh-coverage-very-low-color;
+  }
+
+  &__label {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $nextail-product-report-card-wh-coverage-label-color;
+    font-size: $nextail-product-report-card-wh-coverage-label-font-size;
   }
 }

@@ -1,6 +1,14 @@
-<div class="nextail-product-report-card__figure">figure</div>
+<div class="nextail-product-report-card__figure">
+  <div class="nextail-product-report-card__sales-ranking">{{ product?.sales_ranking }}</div>
+  <img *ngIf="productImage" class="nextail-product-report-card__image" [src]="productImage" />
+</div>
 <div class="nextail-product-report-card__description">
-  {{ product?.code }} <br />
-  <button (click)="onCompleteProduct()">mark as complete</button> <br />
-  {{ product?.sales_ranking }}
+  <div class="nextail-product-report-card__description-detail">
+    <p class="nextail-product-report-card__code">{{ product?.code }}</p>
+    <p class="nextail-product-report-card__name">{{ product?.name }}</p>
+    <p class="nextail-product-report-card__price">{{ product?.price + '€' }}</p>
+  </div>
+  <nextail-product-report-card-wh-coverage
+    [whCoverage]="product?.wh_coverage"
+  ></nextail-product-report-card-wh-coverage>
 </div>
