@@ -1,0 +1,10 @@
+<ng-container *ngIf="graphPoints">
+  <div [style.height]="graphMaxHeight + 'px'" class="nextail-bar-graph__bars-wrapper">
+    <div class="nextail-bar-graph__bar" *ngFor="let item of graphPoints">
+      <span class="nextail-bar-graph__bar-value">{{ item?.value }}</span>
+      <div class="nextail-bar-graph__bar-indicator" [style.height]="calculateGraphBarSize(item)"></div>
+      <div class="nextail-bar-graph__separator"></div>
+      <span class="nextail-bar-graph__bar-label">{{ item?.label }}</span>
+    </div>
+  </div>
+</ng-container>

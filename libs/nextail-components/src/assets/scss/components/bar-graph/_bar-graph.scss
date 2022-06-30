@@ -1,0 +1,37 @@
+.nextail-bar-graph {
+  color: $nextail-bar-graph-font-color;
+  font-size: $nextail-bar-graph-font-size;
+
+  &__bars-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__bar-label {
+    width: $nextail-bar-graph-bar-width;
+    margin: $nextail-bar-graph-label-margin;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: $nextail-bar-graph-bar-width;
+    margin: $nextail-bar-graph-bar-margin;
+    color: $nextail-bar-graph-label-font-color;
+  }
+
+  &__bar-indicator {
+    width: $nextail-bar-graph-bar-width;
+    min-height: 2px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background-color: $nextail-bar-graph-indicator-bg;
+  }
+}

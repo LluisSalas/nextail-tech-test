@@ -9,3 +9,7 @@ export { NextailProgressBarModule } from '../src/lib/components/progress-bar/pro
 export { NextailButtonComponent } from '../src/lib/components/button/button.component';
 export { NextailButtonModule } from '../src/lib/components/button/button.module';
 export { NextailButtonEvent, NextailButtonType } from '../src/lib/components/button/button.config';
+// Bar graph
+export { NextailBarGraphComponent } from '../src/lib/components/bar-graph/bar-graph.component';
+export { NextailBarGrpahModule } from '../src/lib/components/bar-graph/bar-graph.module';
+export { NextailBarGraphModel, NextailBarGraphModelValueType } from '../src/lib/components/bar-graph/bar-graph.config';
