@@ -52,6 +52,7 @@ describe('NextailProductsApi', () => {
       return a.sales_ranking - b.sales_ranking;
     });
     extendedProducts = sortedProducts.map((item) => {
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       return service!['formatProductExtended'](item);
     });
   }
@@ -62,5 +63,6 @@ describe('NextailProductsApi', () => {
   function cleanMocks(): void {
     service = null;
     sortedProducts = null;
+    extendedProducts = null;
   }
 });
