@@ -19,6 +19,9 @@ export class NextailProductReportCardComponent {
   }
 
   onCompleteProduct(): void {
-    this.completeProduct.emit(this.product?.code);
+    // TODO: add custom modal component
+    if (window.confirm('Are you sure you want to mark this product as complete?')) {
+      this.completeProduct.emit(this.product?.code);
+    }
   }
 }
